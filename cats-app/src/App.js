@@ -8,7 +8,7 @@ function App() {
   return (
       // <BrowserRouter>
         <div className="App">
-            <CatsMain name="Vasyl" />
+            <CatsMain name="Pukh" />
           {/*<Switch>*/}
           {/*    <Route path="/cats" component={CatList} exact={true} />*/}
           {/*    <Route path="/" component={CatsMain} exact={true} />*/}
