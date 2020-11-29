@@ -10,9 +10,9 @@ class RestControllers {
 
     @GetMapping("/rest/api/v1/cats")
     fun restCats(): List<Cat> {
-        val vasyl = Cat("Vasyl", 7, "grey")
-        val ryzhyk = Cat("Ryzhyk", 8, "red")
-        val liza = Cat("Liza", 10, "three-colored")
+        val vasyl = Cat(1,"Vasyl", 7, "grey")
+        val ryzhyk = Cat(2,"Ryzhyk", 8, "red")
+        val liza = Cat(3,"Liza", 10, "three-colored")
         return listOf(ryzhyk, vasyl, liza)
     }
 }

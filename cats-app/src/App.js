@@ -10,7 +10,7 @@ function App() {
       // <BrowserRouter>
         <div className="App">
             <Header />
-            <CatsMain name="Pukh" />
+            <CatsMain classname="cats-main" name="Pukh" />
           {/*<Switch>*/}
           {/*    <Route path="/cats" component={CatList} exact={true} />*/}
           {/*    <Route path="/" component={CatsMain} exact={true} />*/}

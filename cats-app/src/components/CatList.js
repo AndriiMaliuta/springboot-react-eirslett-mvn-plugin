@@ -16,6 +16,13 @@ const CatList = () => {
             })
     }
 
+    function handleCatRemove(catId) {
+        const catsNew = cats.filter(cat => catId !== cat.id)
+        setCats(catsNew);
+        console.log(catsNew)
+        console.log('Removing cat ' + catId)
+    }
+
     return (
     <div>
         <h2>Cats</h2>
@@ -23,6 +30,7 @@ const CatList = () => {
             TEST
             {cats.map((cat, index) => (
                 <div className="cat" key={index}>
+                    <p className="close-button" onClick={() => handleCatRemove(cat.id)}>X</p>
                     <p>{cat.name}</p>
                     <p>{cat.age}</p>
                     <p>{cat.color}</p>
