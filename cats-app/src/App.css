@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    background-color: #111111;
+    color: white;
+}
+.header-elem {
+    padding: 5px;
+    margin: 10px;
+}
+.cat {
+    width: 250px;
+    height: 150px;
+    border: 1px solid blue;
+    border-radius: 50%;
+    margin: 10px;
+    padding: 5px;
+}

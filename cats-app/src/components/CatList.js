@@ -21,7 +21,12 @@ const CatList = () => {
         <h2>Cats</h2>
         <div>
             TEST
-            {cats.map((cat, index) => (<div key={index}>{cat.name}</div>)
+            {cats.map((cat, index) => (
+                <div className="cat" key={index}>
+                    <p>{cat.name}</p>
+                    <p>{cat.age}</p>
+                    <p>{cat.color}</p>
+                </div>)
             )}
         </div>
     </div>

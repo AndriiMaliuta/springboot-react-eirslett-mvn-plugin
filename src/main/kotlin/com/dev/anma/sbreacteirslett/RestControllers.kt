@@ -12,6 +12,7 @@ class RestControllers {
     fun restCats(): List<Cat> {
         val vasyl = Cat("Vasyl", 7, "grey")
         val ryzhyk = Cat("Ryzhyk", 8, "red")
-        return listOf(ryzhyk, vasyl)
+        val liza = Cat("Liza", 10, "three-colored")
+        return listOf(ryzhyk, vasyl, liza)
     }
 }
