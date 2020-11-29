@@ -6,21 +6,21 @@ const CatList = () => {
 
     useEffect(() => {
         getCats()
-    }, [cats])
+    }, [])
 
     const getCats = () => {
         fetch("/rest/api/v1/cats")
             .then(resp => resp.json())
             .then(data => {
-                setCats(data)
+                setCats(data);
             })
     }
 
     function handleCatRemove(catId) {
         const catsNew = cats.filter(cat => catId !== cat.id)
-        setCats(catsNew);
-        console.log(catsNew)
         console.log('Removing cat ' + catId)
+        console.log(catsNew)
+        setCats(catsNew);
     }
 
     return (

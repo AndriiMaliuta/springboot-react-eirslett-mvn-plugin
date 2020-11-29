@@ -27,4 +27,5 @@ a {
 .close-button {
     text-align: right;
     color: red;
+    cursor: pointer;
 }
