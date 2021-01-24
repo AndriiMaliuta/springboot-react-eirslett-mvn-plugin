@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import { Link } from 'react-router-dom'
 
 const CatList = () => {
 
@@ -31,7 +32,7 @@ const CatList = () => {
             {cats.map((cat, index) => (
                 <div className="cat" key={index}>
                     <p className="close-button" onClick={() => handleCatRemove(cat.id)}>X</p>
-                    <p>{cat.name}</p>
+                    <p><Link to={`/cats/${cat.id}`}>{cat.name}</Link></p>
                     <p>{cat.age}</p>
                     <p>{cat.color}</p>
                 </div>)
