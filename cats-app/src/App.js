@@ -1,7 +1,6 @@
 import React from 'react';
-import { Switch, BrowserRouter, Route } from 'react-router-dom';
+// import { Switch, BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
-import CatList from "./components/CatList";
 import CatsMain from "./components/CatsMain";
 import Header from "./components/Header";
 
