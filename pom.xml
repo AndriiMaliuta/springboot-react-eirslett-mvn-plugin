@@ -10,16 +10,14 @@
     </parent>
     <groupId>com.dev.anma</groupId>
     <artifactId>sb-react-eirslett</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <name>sb-react-eirslett</name>
     <description>SB adn React with com.github.eirslett</description>
 
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>11</java.version>
         <kotlin.version>1.4.10</kotlin.version>
         <frontend-maven-plugin.version>1.10.4</frontend-maven-plugin.version>
-<!--        <node.version>v10.15.2</node.version>-->
-<!--        <npm.version>6.4.1</npm.version>-->
         <node.version>v15.6.0</node.version>
         <npm.version>7.4.0</npm.version>
         <catsAppSrcDir>${project.basedir}/cats-app</catsAppSrcDir>
@@ -103,14 +101,11 @@
                 <groupId>com.github.eirslett</groupId>
                 <artifactId>frontend-maven-plugin</artifactId>
                 <version>${frontend-maven-plugin.version}</version>
-
                 <configuration>
                     <nodeVersion>${node.version}</nodeVersion>
                     <npmVersion>${npm.version}</npmVersion>
                 </configuration>
-
                 <executions>
-
                     <execution>
                         <id>install-frontend-tools-cats</id>
                         <goals>
@@ -120,7 +115,6 @@
                             <workingDirectory>${catsAppSrcDir}</workingDirectory>
                         </configuration>
                     </execution>
-
                     <execution>
                         <id>npm-install-cats-app</id>
                         <goals>
@@ -144,7 +138,6 @@
                     </execution>
 
                 </executions>
-
             </plugin>
 
             <plugin>
